@@ -1,6 +1,10 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
+
+*{
+
     margin :0;
     padding :0;
+    font-family: "roboto", sans-serif;
 }
 .navbar {
 display: flex;
@@ -27,6 +31,11 @@ font-size: 13px;
     list-style: none;
 }
 
+.navbar__li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .navbar__media {
     display:flex;
     align-items: center;/* alinea los elementos verticalmente*/
@@ -38,7 +47,18 @@ font-size: 13px;
     justify-content: center;
     width: 48px;
     height: 48px;
-
+}
+.navbar__ball{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 48px;
+}
+.navbar__menu:hover{
+    fill: #5f6368;
+    width: 24px;
+    height: 24px;
 }
 .navbar__imagemenu {
     color:#5f6368;
@@ -70,4 +90,32 @@ main {
     justify-content: end;
 
 }
+.main_search {
+ width: 561px;   
+ height: 44px;
+ padding: 1px 1px;
+ box-shadow: 0 1px 6px 0 #20212447;
+ border-radius: 50px;
+ display: grid;
+ grid-template-columns: 52px 422px 41px 41px;
+ grid-template-rows: 44px;
+ justify-items: center;
+ align-items: center;
 
+
+}
+.main_input {
+    width: 422px;
+    height: 42px;
+    border: none;
+    outline: none;
+}
+.main_img {
+    cursor: pointer;
+
+}
+.main_img--icons {
+    width: 24px;
+    height: 24px;
+
+}
